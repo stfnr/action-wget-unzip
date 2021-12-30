@@ -11,7 +11,7 @@ inputs:
 
 branding:
     color: blue
-    icon: check-square
+    icon: download
 runs:
     using: docker
     image: 'Dockerfile'
