@@ -14,5 +14,5 @@ jobs:
           destination: arm-release
       - name : Test that the desired folder is present
         run : "ls -la $GITHUB_WORKSPACE/arm-release"
-      - name : Test that the zip file is gone
+      - name : Test that the zip file is not present
         run : "if [[ -f artifact.zip ]]; then exit 1; else exit 0; fi"

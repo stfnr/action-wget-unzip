@@ -1,3 +1,5 @@
+[![.github/workflows/main.yaml](https://github.com/schmiddim/action-wget-unzip/actions/workflows/main.yaml/badge.svg?branch=master)](https://github.com/schmiddim/action-wget-unzip/actions/workflows/main.yaml)
+
 # Download Zip file and extract it action
 
 This action downloads a zip file and extracts it to a certain folder
