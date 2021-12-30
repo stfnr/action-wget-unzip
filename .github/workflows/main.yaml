@@ -2,9 +2,9 @@ on:
   push:
   workflow_dispatch:
 jobs:
-  hello_world_job:
+  wget_zip:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Test the Zip functionality
     steps:
       # To use this repository's private action,
       # you must check out the repository
@@ -17,4 +17,4 @@ jobs:
           url: 'https://github.com/hpool-dev/chia-miner/releases/download/1.5.6/HPool-Miner-chia-og-v1.5.6-1-linux.zip'
           destination: arm-release
       - name : machine ls $GITHUB_WORKSPACE
-        run : "ls -la $GITHUB_WORKSPACE"
+        run : "ls -la $GITHUB_WORKSPACE/foo"
