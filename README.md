@@ -19,7 +19,7 @@ with:
   destination: arm-release
 ```
 
-
+if [[ test -f foo -eq 1]]; then exit 0; else exit 1; fi
 
 
 
