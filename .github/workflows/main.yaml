@@ -6,12 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Test the Zip Functionality
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Download and extract
-        uses: schmiddim/wget-unzip@v1
+        uses: schmiddim/action-wget-unzip@v1
         id: hello
         with:
           url: 'https://github.com/hpool-dev/chia-miner/releases/download/1.5.6/HPool-Miner-chia-og-v1.5.6-1-linux.zip'
