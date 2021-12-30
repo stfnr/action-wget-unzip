@@ -1,4 +1,4 @@
-name: schmiddim-wget-unzip
+name: "schmiddim-wget-unzip"
 author: Michael Schmitt
 description: GitHub action to download + unzip files
 inputs:
