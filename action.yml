@@ -1,0 +1,18 @@
+name: schmiddim-wget-unzip
+author: Michael Schmitt
+description: GitHub action to download + unzip files
+inputs:
+    url:
+        description: "url that must point to a zip file"
+        required: true
+    destination:
+        description: "extraction folder"
+        required: true    
+branding:
+    color: blue
+    icon: check-square
+runs:
+    using: docker
+    image: 'Dockerfile'
+    args:
+        - ${{ inputs.url }} ${{ inputs.destination }}
