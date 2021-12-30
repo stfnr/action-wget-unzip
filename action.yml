@@ -6,8 +6,9 @@ inputs:
         description: "url that must point to a zip file"
         required: true
     destination:
-        description: "extraction folder"
+        description: "destination folder"
         required: true    
+
 branding:
     color: blue
     icon: check-square
