@@ -10,7 +10,8 @@ if [  "$#" -eq  "2" ]
             exit $retVal
         fi
 
-        unzip -jo -qq ./$DOWNLOAD_NAME  -d ./$2
+        #unzip -jo -qq ./$DOWNLOAD_NAME  -d ./$2
+        unzip -o ./$DOWNLOAD_NAME  -d ./$2
         retVal=$?
         if [ $retVal -ne 0 ]; then
             echo "Error unzipping from url $1"
